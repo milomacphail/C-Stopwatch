@@ -8,7 +8,7 @@ namespace Stopwatch
         {
             Console.WriteLine("Press 's' to start the clock.");
 
-            ConsoleKeyInfo start = Console.ReadKey();
+            ConsoleKeyInfo start = Console.ReadKey(true);
 
             if (start.KeyChar == 's')
             {
@@ -17,7 +17,7 @@ namespace Stopwatch
 
                 Console.WriteLine("Press 'x' to stop the clock.");
 
-                ConsoleKeyInfo stop = Console.ReadKey();
+                ConsoleKeyInfo stop = Console.ReadKey(true);
 
                 if (stop.KeyChar == 'x')
                 {
